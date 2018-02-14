@@ -41,6 +41,8 @@ limitations under the License.
     background: (--background);
 }
 
+#help_icon_circle_count { left: -25px; }
+
 h1, h2, h3, h4 {
   color: var(--text);
 }
