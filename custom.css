@@ -36,6 +36,11 @@ limitations under the License.
    --scrollbar-border: var(--primary);
 }
 
+.client_container {
+    color: var(--text);
+    background: (--background);
+}
+
 h1, h2, h3, h4 {
   color: var(--text);
 }
