@@ -43,6 +43,15 @@ limitations under the License.
 
 #help_icon_circle_count { left: -25px; }
 
+.c-mrkdwn__member--link, .c-mrkdwn__subteam--link 
+{
+    background: var(--background-elevated) !important;
+}
+.c-mrkdwn__mention, .c-mrkdwn__mention:hover, .c-mrkdwn__member--mention, .c-mrkdwn__member--mention:hover, .c-mrkdwn__broadcast--mention, .c-mrkdwn__broadcast--mention:hover, .c-mrkdwn__subteam--mention, .c-mrkdwn__subteam--mention:hover 
+{
+    background: var(--background-hover) !important;
+}
+
 h1, h2, h3, h4 {
   color: var(--text);
 }
