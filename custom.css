@@ -108,7 +108,8 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover, 
 .c-message,
-.c-message__body {
+.c-message__body,
+.c-message_attachment {
    color: var(--text) !important;
 }
 
