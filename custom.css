@@ -40,9 +40,6 @@ limitations under the License.
     color: var(--text);
     background: (--background);
 }
-.c-message__body {
-    color: var(--text) !important;
-}
 
 h1, h2, h3, h4 {
   color: var(--text);
@@ -99,7 +96,8 @@ body:not(.loading) #team_menu:active {
 .p-channel_sidebar__link:visited,
 .p-channel_sidebar__channel:hover,
 .p-channel_sidebar__link:hover, 
-.c-message {
+.c-message,
+.c-message__body {
    color: var(--text) !important;
 }
 
