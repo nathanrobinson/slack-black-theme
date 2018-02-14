@@ -469,7 +469,7 @@ code {
 }
 
 a, a:link, a:visited{
-  color: var(--text-special);
+  color: var(--text-special) !important;
 }
 ts-message a .mention{
   color: var(--text-special) !important;
