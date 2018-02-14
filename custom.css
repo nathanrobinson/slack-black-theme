@@ -40,6 +40,9 @@ limitations under the License.
     color: var(--text);
     background: (--background);
 }
+.c-message__body {
+    color: var(--text);
+}
 
 h1, h2, h3, h4 {
   color: var(--text);
