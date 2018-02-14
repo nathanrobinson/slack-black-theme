@@ -40,8 +40,8 @@ limitations under the License.
     color: var(--text);
     background: (--background);
 }
-.client_container .c-message .c-message__body {
-    color: var(--text);
+.c-message__body {
+    color: var(--text) !important;
 }
 
 h1, h2, h3, h4 {
