@@ -61,7 +61,7 @@ limitations under the License.
     color: var(--text)!important;
 }
 .c-message--adjacent .c-message__gutter {
-    opacity: 0.5!important;
+    opacity: 0.3!important;
 }
 
 .p-message_pane__unread_banner__banner,
