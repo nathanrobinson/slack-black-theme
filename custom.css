@@ -60,6 +60,9 @@ limitations under the License.
 .c-timestamp__label {
     color: var(--text)!important;
 }
+.c-message--adjacent .c-message__gutter {
+    opacity: 0.5!important;
+}
 
 .p-message_pane__unread_banner__banner,
 .c-message_list__unread_divider__label {
