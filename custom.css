@@ -41,6 +41,12 @@ limitations under the License.
     background: (--background);
 }
 
+.p-message_pane__unread_banner__banner,
+.c-message_list__unread_divider__label {
+    background: var(--background-elevated);
+    border: 1px solid var(--border-dim);
+}
+
 #help_icon_circle_count { left: -25px; }
 
 .c-mrkdwn__member--link, .c-mrkdwn__subteam--link 
