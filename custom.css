@@ -17,19 +17,19 @@ limitations under the License.
 :root {
    /* Modify these to change your theme colors: */
    --primary: #61AFEF;
-   --text: #ABB2BF;
-   --background: #282C34;
-   --background-elevated: #3B4048;
+   --text: #a1a6a4;
+   --background: #262626;
+   --background-elevated: #0d0c0c;
 
    /* These should be less important: */
    --background-hover: rgba(255, 255, 255, 0.1);
-   --background-light: #AAA;
-   --background-bright: #FFF;
+   --background-light: #566573;
+   --background-bright: #f0f2f2;
 
-   --border-dim: #666;
-   --border-bright: var(--primary);
+   --border-dim: var(--background-light);
+   --border-bright: var(--background-bright);
 
-   --text-bright: #FFF;
+   --text-bright: var(--background-bright);
    --text-special: var(--primary);
 
    --scrollbar-background: #000;
