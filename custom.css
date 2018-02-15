@@ -36,15 +36,18 @@ limitations under the License.
    --scrollbar-border: var(--primary);
 }
 
-.c-reaction,
+.c-reaction {
+    border: 1px solid var(--border-dim)!important;
+    background: var(--background-elevated)!important;
+}
+
 .c-message--ephemeral {
-    border: 1px solid var(--border-dim);
-    background: var(--background-elevated);
+    background: var(--background-elevated)!important;
 }
 
 .client_container {
-    color: var(--text);
-    background: (--background);
+    color: var(--text)!important;
+    background: (--background)!important;
 }
 .c-message__bot_label {
     color: var(--text-special)!important;
@@ -63,7 +66,7 @@ limitations under the License.
     border: 1px solid var(--border-dim)!important;
 }
 
-#help_icon_circle_count { left: -25px; }
+#help_icon_circle_count { left: -25px!important; }
 
 .c-mrkdwn__member--link, .c-mrkdwn__subteam--link 
 {
