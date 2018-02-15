@@ -17,6 +17,27 @@ limitations under the License.
 :root {
    /* Modify these to change your theme colors: */
     
+    /*Green Magic Color Palette*/
+   --primary: #348d2c;
+   --text: #aeacac;
+   --background: #003309;
+   --background-elevated: #240900;
+
+   --background-hover: rgba(255, 255, 255, 0.1);
+   --background-light: #001945;
+   --background-bright: #f0f2f2;
+
+   --border-dim: var(--background-light);
+   --border-bright: var(--background-bright);
+
+   --text-bright: var(--background-bright);
+   --text-special: var(--primary);
+
+   --scrollbar-background: #000;
+   --scrollbar-border: var(--primary);
+    /*Green Magic Color Palette*/
+    
+    
     /*Mono Lisa Color Palette*/
    --primary: #61AFEF;
    --text: #a1a6a4;
