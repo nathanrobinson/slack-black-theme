@@ -36,6 +36,10 @@ limitations under the License.
    --scrollbar-border: var(--primary);
 }
 
+.c-message--ephemeral {
+    background: var(--background-elevated);
+}
+
 .client_container {
     color: var(--text);
     background: (--background);
