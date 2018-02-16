@@ -63,7 +63,8 @@ limitations under the License.
     background: var(--background-elevated)!important;
 }
 
-.c-message--ephemeral {
+.c-message--ephemeral,
+.app_preview_link_slug, .internal_member_link, .internal_user_group_link, ts-mention {
     background: var(--background-elevated)!important;
 }
 
