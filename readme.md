@@ -8,44 +8,36 @@ A darker, more contrasty, Slack theme.
 
 # Installing into Slack
 
-Find your Slack's application directory.
-
-* Windows: `%homepath%\AppData\Local\slack\`
-* Mac: `/Applications/Slack.app/Contents/`
-* Linux: `/usr/lib/slack/` (Debian-based)
-
-
-Open up the most recent version (e.g. `app-2.5.1`) then open
-`resources\app.asar.unpacked\src\static\index.js`
-
-At the very bottom, add
+in tampermonkey:
 
 ```js
-// First make sure the wrapper app is loaded
-document.addEventListener("DOMContentLoaded", function() {
+// ==UserScript==
+// @name         Slack Darkmode
+// @namespace    http://slack.com/
+// @version      0.1
+// @description  Make a dark mode for Slack
+// @author       Nathan Robinson
+// @match        https://propak.slack.com/*
+// @grant        none
+// ==/UserScript==
 
-   // Then get its webviews
-   let webviews = document.querySelectorAll(".TeamView webview");
+(function() {
+    'use strict';
 
-   // Fetch our CSS in parallel ahead of time
-   const cssPath = 'https://cdn.rawgit.com/widget-/slack-black-theme/master/custom.css';
-   let cssPromise = fetch(cssPath).then(response => response.text());
+    $(function(){
+    // Then get its webviews
+    let webviews = document.querySelectorAll(".TeamView webview");
 
-   let customCustomCSS = `
-   :root {
-      /* Modify these to change your theme colors: */
-      --primary: #09F;
-      --text: #CCC;
-      --background: #080808;
-      --background-elevated: #222;
-   }
-   `
+    // Fetch our CSS in parallel ahead of time
+    const cssPath = 'https://cdn.rawgit.com/nathanrobinson/slack-black-theme/master/custom.css';
+    let cssPromise = fetch(cssPath).then(response => response.text());
 
    // Insert a style tag into the wrapper view
    cssPromise.then(css => {
       let s = document.createElement('style');
       s.type = 'text/css';
-      s.innerHTML = css + customCustomCSS;
+      s.id = 'slack-dark-mode-custom-css';
+      s.innerHTML = css;
       document.head.appendChild(s);
    });
 
@@ -58,15 +50,25 @@ document.addEventListener("DOMContentLoaded", function() {
                let script = `
                      let s = document.createElement('style');
                      s.type = 'text/css';
-                     s.id = 'slack-custom-css';
-                     s.innerHTML = \`${css + customCustomCSS}\`;
+                     s.id = 'slack-dark-mode-custom-css';
+                     s.innerHTML = \`${css}\`;
                      document.head.appendChild(s);
-                     `
+                     `;
                webview.executeJavaScript(script);
-            })
+            });
       });
    });
-});
+    });
+    // Your code here...
+})();
+```
+
+For the Slack APP:
+Set SLACK_DEVELOPER_MENU=true in system environment variables.
+Open Slack and press Alt + Ctrl + i
+In the dev tools console:
+```js
+(function(){'use strict';$(function(){let a=document.querySelectorAll('.TeamView webview');let c=fetch('https://cdn.rawgit.com/nathanrobinson/slack-black-theme/master/custom.css').then(d=>d.text());c.then(d=>{let e=document.createElement('style');e.type='text/css',e.id='slack-dark-mode-custom-css',e.innerHTML=d,document.head.appendChild(e)}),a.forEach(d=>{d.addEventListener('ipc-message',e=>{'didFinishLoading'==e.channel&&c.then(f=>{let g=`let s=document.createElement('style');s.type='text/css';s.id='slack-dark-mode-custom-css';s.innerHTML=\`${f}\`;document.head.appendChild(s);`;d.executeJavaScript(g)})})})})})();
 ```
 
 Notice that you can edit any of the theme colors using the custom CSS (for
