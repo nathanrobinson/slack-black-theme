@@ -23,18 +23,9 @@ limitations under the License.
    --background: #003309;
    --background-elevated: #240900;
 
-   --background-hover: rgba(255, 255, 255, 0.1);
    --background-light: #001945;
    --background-bright: #f0f2f2;
-
-   --border-dim: var(--background-light);
-   --border-bright: var(--background-bright);
-
-   --text-bright: var(--background-bright);
-   --text-special: var(--primary);
-
    --scrollbar-background: #000;
-   --scrollbar-border: var(--primary);
     /*Green Magic Color Palette*/
     
     
@@ -43,24 +34,51 @@ limitations under the License.
    --text: #a1a6a4;
    --background: #262626;
    --background-elevated: #0d0c0c;
-
-   --background-hover: rgba(255, 255, 255, 0.1);
    --background-light: #566573;
    --background-bright: #f0f2f2;
+   --scrollbar-background: #000;
+    /*Mono Lisa Color Palette*/
+
+    /*Default*/
+    --primary: #09F;
+    --text: #CCC;
+    --background: #080808;
+    --background-elevated: #222;
+   --background-light: #566573;
+   --background-bright: #f0f2f2;
+   --scrollbar-background: #000;
+    /*Default*/
+    
+    /*One Dark*/
+    --primary: #61AFEF;
+    --text: #ABB2BF;
+    --background: #282C34;
+    --background-elevated: #3B4048;
+   --background-light: #566573;
+   --background-bright: #f0f2f2;
+   --scrollbar-background: #000;
+    /*One Dark*/
+       
+
+   --background-hover: rgba(255, 255, 255, 0.1);
 
    --border-dim: var(--background-light);
    --border-bright: var(--background-bright);
 
    --text-bright: var(--background-bright);
    --text-special: var(--primary);
-
-   --scrollbar-background: #000;
-   --scrollbar-border: var(--primary);
 }
 
-.c-reaction {
-    border: 1px solid var(--border-dim)!important;
+
+.p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+    box-shadow: none!important;
+}
+.p-channel_sidebar__badge,
+.c-reaction,
+.p-message_pane__unread_banner__banner,
+.c-message_list__unread_divider__label {
     background: var(--background-elevated)!important;
+    border: 1px solid var(--border-dim)!important;
 }
 
 .c-message--ephemeral,
@@ -85,12 +103,6 @@ limitations under the License.
 }
 .c-message--adjacent .c-message__gutter {
     opacity: 0.3!important;
-}
-
-.p-message_pane__unread_banner__banner,
-.c-message_list__unread_divider__label {
-    background: var(--background-elevated)!important;
-    border: 1px solid var(--border-dim)!important;
 }
 
 #help_icon_circle_count { left: -25px!important; }
