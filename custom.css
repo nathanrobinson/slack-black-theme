@@ -283,7 +283,7 @@ li.active[class] span,
 .p-channel_sidebar__badge,
 .p-channel_sidebar__banner--mentions {
    /*inverted because important*/
-   color: var(--text-bright);
+   color: var(--text-special);
 }
 
 /*also add border to unread count for individual channels*/
