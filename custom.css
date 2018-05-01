@@ -57,6 +57,7 @@ limitations under the License.
    --background-light: #566573;
    --background-bright: #f0f2f2;
    --scrollbar-background: #000;
+    --slug-background: rgba(50, 0, 0, 0.85);
     /*One Dark*/
        
 
@@ -69,6 +70,11 @@ limitations under the License.
    --text-special: var(--primary);
 }
 
+.c-member_slug--link {
+    background: var(--slug-background);
+    padding: 5px;
+    border-radius: 10px;
+}
 
 .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .p-message_pane__top_banners:not(:empty) + div .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
     box-shadow: none!important;
