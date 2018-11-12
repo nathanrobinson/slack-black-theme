@@ -54,14 +54,15 @@ limitations under the License.
     --text: #ABB2BF;
     --background: #282C34;
     --background-elevated: #3B4048;
-   --background-light: #566573;
-   --background-bright: #f0f2f2;
-   --scrollbar-background: #000;
+    --background-light: #566573;
+    --background-bright: #f0f2f2;
+    --scrollbar-background: #000;
     --slug-background: rgba(50, 0, 0, 0.85);
     /*One Dark*/
        
 
    --background-hover: rgba(255, 255, 255, 0.1);
+   --background-dimmer: rgba(20, 20, 20, 0.6);
 
    --border-dim: var(--background-light);
    --border-bright: var(--background-bright);
@@ -669,22 +670,22 @@ ts-mention.ts_tip:hover
 
 /* emojis */
 .c-menu.p-emoji_picker {
-    background: #2c2d30;
-    border: 1px solid #717274;
+    border: 1px solid var(--background-light);
 }
 .p-emoji_picker__heading {
-    background: rgba(44,45,48,.67);
+    background: var(--background-dimmer);
 }
 
+.c-menu.p-emoji_picker,
 .p-emoji_picker__footer {
-    background: #2c2d30;
+    background: var(--background);
 }
 
 .p-emoji_picker__group_tab--active,
 .p-emoji_picker__input_container,
 .p-emoji_picker__list_container
  {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--background-hover);
 }
 
 .rxn[data-emoji] {
@@ -826,6 +827,10 @@ ts-message .reply_bar:hover {
 .reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
 #convo_tab #convo_tab_header {
    color: var(--text) !important;
+}
+
+#reply_container.upload_in_threads .inline_message_input_container {
+    background: var(--background-dimmer);
 }
 
 /* other */
@@ -979,7 +984,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 #threads_msgs .inline_message_input_container {
-    background: rgba(22, 22, 22, 0.60);
+    background: var(--background-dimmer);
 }
 
 /* thread side panel */
