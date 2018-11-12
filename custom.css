@@ -478,6 +478,7 @@ ts-message .action_hover_container .btn_msg_action,
   box-shadow: 0 1px 10px var(--background-elevated) !important;
 }
 
+.texty_legacy .ql-placeholder,
 .ql-placeholder {
    color: var(--text);
 }
@@ -667,6 +668,25 @@ ts-mention.ts_tip:hover
 }
 
 /* emojis */
+.c-menu.p-emoji_picker {
+    background: #2c2d30;
+    border: 1px solid #717274;
+}
+.p-emoji_picker__heading {
+    background: rgba(44,45,48,.67);
+}
+
+.p-emoji_picker__footer {
+    background: #2c2d30;
+}
+
+.p-emoji_picker__group_tab--active,
+.p-emoji_picker__input_container,
+.p-emoji_picker__list_container
+ {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 .rxn[data-emoji] {
    /*background-color: var(--background-light) !important;
    transition: background-color 200ms ease-in;*/
@@ -952,6 +972,14 @@ div::-webkit-scrollbar-thumb {
 
 #threads_msgs_scroller_div:not(.loading):before {
    background: none;
+}
+
+#threads_msgs .inline_message_input_container.with_file_upload .message_input {
+    margin-left: 40px;
+}
+
+#threads_msgs .inline_message_input_container {
+    background: rgba(22, 22, 22, 0.60);
 }
 
 /* thread side panel */
