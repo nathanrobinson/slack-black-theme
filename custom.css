@@ -314,13 +314,13 @@ li.active[class] span,
   color: inherit !important;
 }
 
-#client_body::before, #client_body:not(.onboarding):before {
+#client_body::before, #client_body:before, #messages_container.has_top_messages_banner:before {
   border-bottom: 1px solid var(--border-dim) !important;
-  background: var(--background);
-  box-shadow: none;
+  background: unset !important;
+  box-shadow: unset !important;
 }
 
-#client_body, #messages_container.has_top_messages_banner:before {
+#client_body {
    background: var(--background) !important;
 }
 
@@ -984,7 +984,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 #threads_msgs .inline_message_input_container {
-    background: var(--background-dimmer);
+    background: var(--background-dimmer) !important;
 }
 
 /* thread side panel */
