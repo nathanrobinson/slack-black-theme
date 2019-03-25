@@ -94,7 +94,11 @@ limitations under the License.
 }
 
 .c-message--ephemeral,
-.app_preview_link_slug, .internal_member_link, .internal_user_group_link, ts-mention {
+.app_preview_link_slug,
+.internal_member_link,
+.internal_user_group_link,
+.p-threads_view_reply--new_reply,
+ts-mention {
     background: var(--background-elevated) !important;
 }
 
