@@ -98,11 +98,11 @@ limitations under the License.
     background: var(--background-elevated)!important;
 }
 
-.client_container, .p-threads_view {
+.client_container, .p-threads_view, .p-threads_view__default_background, .p-message_input_field, .c-button-unstyled {
     color: var(--text)!important;
     background: (--background)!important;
 }
-.c-message__bot_label {
+.c-message__bot_label, .p_threads_view_load_older_button {
     color: var(--text-special)!important;
     background: var(--background-elevated)!important;
 }
