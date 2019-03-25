@@ -95,29 +95,29 @@ limitations under the License.
 
 .c-message--ephemeral,
 .app_preview_link_slug, .internal_member_link, .internal_user_group_link, ts-mention {
-    background: var(--background-elevated)!important;
+    background: var(--background-elevated) !important;
 }
 
 .client_container, .p-threads_view, .p-threads_view__default_background, .p-message_input_field, .c-button-unstyled {
-    color: var(--text)!important;
-    background: (--background)!important;
+    color: var(--text) !important;
+    background: var(--background) !important;
 }
 .c-message__bot_label, .p_threads_view_load_older_button {
-    color: var(--text-special)!important;
-    background: var(--background-elevated)!important;
+    color: var(--text-special) !important;
+    background: var(--background-elevated) !important;
 }
 
 .c-reaction__count,
 .c-message_attachment__pretext,
 .c-timestamp,
 .c-timestamp__label {
-    color: var(--text)!important;
+    color: var(--text) !important;
 }
 .c-message--adjacent .c-message__gutter {
-    opacity: 0.3!important;
+    opacity: 0.3 !important;
 }
 
-#help_icon_circle_count { left: -25px!important; }
+#help_icon_circle_count { left: -25px !important; }
 
 .c-mrkdwn__member--link, .c-mrkdwn__subteam--link 
 {
