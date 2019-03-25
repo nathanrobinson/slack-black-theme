@@ -98,7 +98,7 @@ limitations under the License.
     background: var(--background-elevated)!important;
 }
 
-.client_container {
+.client_container, .p-threads_view {
     color: var(--text)!important;
     background: (--background)!important;
 }
