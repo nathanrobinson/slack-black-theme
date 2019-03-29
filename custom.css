@@ -111,6 +111,12 @@ ts-mention {
     background: var(--background-elevated) !important;
 }
 
+.p-flexpane_header {
+    color: var(--text-special) !important;
+    background: var(--background-elevated) !important;
+    border-bottom-color: var(--background-light) !important;
+}
+
 .c-reaction__count,
 .c-message_attachment__pretext,
 .c-timestamp,
@@ -134,6 +140,13 @@ ts-mention {
 
 h1, h2, h3, h4 {
   color: var(--text);
+}
+
+hr.p-threads_flexpane__separator_line {
+    border-top-color: var(--background-light) !important;
+}
+.p-threads_flexpane__separator, .p-threads_flexpane__separator > span, .p-threads_flexpane__separator_count {
+    color: var(--text-special) !important;
 }
 
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before, .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before
